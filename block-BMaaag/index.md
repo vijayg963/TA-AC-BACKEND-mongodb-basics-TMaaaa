@@ -23,17 +23,21 @@ Write code to:-
 - insert multiple document using insertMany command
 
 ```js
-//  db.himalayas.insertMany('')
+db.himalayas.insertMany([
+  { name: 'Dhauldhar range', height: '4000 mtrs' },
+  { name: 'spiti range', height: '3000 mtrs' },
+  { name: 'parvti hill range', height: '3000 mtrs' },
+]);
 ```
 
 - find all documents from mountains
 
 ```js
-
+//  db.himalayas.find().pretty()
 ```
 
 - find a single document using name
 
 ```js
-
+// db.himalayas.find({name: 'spiti range'})
 ```
